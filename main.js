@@ -333,7 +333,7 @@ Request.prototype.request = function () {
 
         if ((cacheResult.response.headers['pragma'] || '').match('no-cache')) {
           cacheDisposition = 'TRANSPARENT';
-          if (!options.haders['cache-control']) {
+          if (!options.headers['cache-control']) {
             options.headers['cache-control'] = 'no-cache';
           }
         } else if (cc['no-cache']) {
